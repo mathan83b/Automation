@@ -1,5 +1,8 @@
 package testing;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.List;
 
 
@@ -20,7 +23,7 @@ public class Learning {
 	
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws AWTException {
 		
 		System.setProperty("Webdriver.Chrome.driver","C:\\Users\\Lenovo\\Desktop\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
@@ -35,6 +38,9 @@ public class Learning {
 		
 		
 		driver.get("https://demoqa.com/");
+		Robot rb=new Robot();
+		rb.keyPress(KeyEvent.VK_PAGE_DOWN);
+		rb.keyRelease(KeyEvent.VK_PAGE_DOWN);
 		driver.findElement(By.xpath("/html/body/div/div/div/div[2]/div/div[1]/div/div[2]")).click();
 		
 		
