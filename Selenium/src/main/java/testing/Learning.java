@@ -35,6 +35,7 @@ public class Learning {
 		
 		
 		driver.get("https://demoqa.com/");
+		driver.findElement(By.xpath("/html/body/div/div/div/div[2]/div/div[1]/div/div[2]")).click();
 		
 		
 		
