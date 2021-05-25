@@ -34,11 +34,9 @@ public class Learning {
 		//System.out.println(count);
 		
 		
-		driver.get("http://webdriveruniversity.com/Click-Buttons/index.html");
+		driver.get("https://demoqa.com/");
 		
-		Actions build=new Actions(driver);
-		Action obj=build.moveToElement(driver.findElement(By.id("button3"))).click().build();
-		obj.perform();
+		
 		
 		
 		
